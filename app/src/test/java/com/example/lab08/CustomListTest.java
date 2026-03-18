@@ -22,5 +22,16 @@ public class CustomListTest {
         list.deleteCity(calgary); // method does NOT exist yet
         assertFalse(list.hasCity(calgary));
     }
+    @Test
+    public void testCountCities() {
+        CustomList list = new CustomList();
 
+        // Initially, list should be empty
+        assertEquals(0, list.countCities());
+
+        // Add a city and check count
+        City calgary = new City("Calgary", "AB");
+        list.addCity(calgary);
+        assertEquals(1, list.countCities());
+    }
 }
