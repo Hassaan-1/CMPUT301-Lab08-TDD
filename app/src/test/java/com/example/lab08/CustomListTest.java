@@ -22,4 +22,5 @@ public class CustomListTest {
         list.deleteCity(calgary); // method does NOT exist yet
         assertFalse(list.hasCity(calgary));
     }
+
 }
